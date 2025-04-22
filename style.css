@@ -6,12 +6,64 @@
   color: black;
 }
 
-.header {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+main h2 {
+  background-color: yellow;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main h2:hover {
+  transform: scale(1.2);
+  background-color: purple;
+  color: white;
+}
+main .links {
+  display: flex;
+  gap: 15px;
+}
+main .links .git {
+  background-color: yellow;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .links .git:hover {
+  transform: scale(1.2);
+  background-color: purple;
+  color: white;
+}
+main .header {
   width: 100%;
   text-align: center;
 }
-
-a {
-  color: purple;
-  display: inline;
+main .projects {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .projects a {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+main .projects a:hover {
+  transform: scale(1.2);
+  background-color: yellow;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

@@ -5,11 +5,65 @@
     text-decoration: none;
     color:black
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    h2{
+        background-color: yellow;
+        padding:10px;
+        border:none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    h2:hover{
+        transform: scale(1.2);
+        background-color: purple;
+        color:white
+    }
+
+    .links{
+        display: flex;
+        gap:15px;
+        .git{
+            background-color: yellow;
+            padding:10px;
+            border:none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .git:hover{
+            transform: scale(1.2);
+            background-color: purple;
+            color:white
+        }
+}
 .header{
     width: 100%;
     text-align: center;
 }
+.projects{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     a{
-        color: purple;
-        display: inline;
+        background-color: purple;
+        color:white;
+        padding: 10px;
+        border:none;
+        border-radius: 10px;
+        transition: 0.5s;
     }
+    a:hover{
+        transform: scale(1.2);
+        background-color: yellow;
+        color: black;
+    }
+}
+}
