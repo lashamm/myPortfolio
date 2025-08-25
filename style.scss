@@ -1,69 +1,43 @@
 *{
+    margin: 0;
     padding: 0;
-    margin:0;
     box-sizing: border-box;
-    text-decoration: none;
-    color:black
 }
-main{
+header{
+    height: 130px;
+    background-color: pink;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap:40px;
-    h2{
+    padding-left:85px;
+    padding-right: 85px;
+    .pfp{
+        height: 115px;
+        width: 115px;
+        border-radius: 50%;
         background-color: yellow;
-        padding:10px;
-        border:none;
-        border-radius: 10px;
         cursor: pointer;
-        transition: 0.4s;
-    }
-    h2:hover{
-        transform: scale(1.2);
-        background-color: purple;
-        color:white
-    }
-
-    .links{
-        display: flex;
-        gap:15px;
-        .git{
-            background-color: yellow;
-            padding:10px;
-            border:none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.4s;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.15);
         }
-        .git:hover{
-            transform: scale(1.2);
-            background-color: purple;
-            color:white
-        }
-}
-.header{
-    width: 100%;
-    text-align: center;
-}
-.projects{
-    display: flex;
-    gap:30px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    a{
-        background-color: purple;
-        color:white;
-        padding: 10px;
-        border:none;
-        border-radius: 10px;
-        transition: 0.5s;
     }
-    a:hover{
-        transform: scale(1.2);
-        background-color: yellow;
-        color: black;
+    .nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            li{
+                list-style: none;
+                cursor:pointer;
+                font-size: 30px;
+                transition: 0.3s;
+                &:hover{
+                    transform: scale(1.15);
+                    color:grey;
+                }
+            }
+        };
     }
-}
 }

@@ -1,69 +1,42 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  color: black;
 }
 
-main {
+header {
+  height: 130px;
+  background-color: pink;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
-main h2 {
+header .pfp {
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
   background-color: yellow;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.3s;
 }
-main h2:hover {
-  transform: scale(1.2);
-  background-color: purple;
-  color: white;
+header .pfp:hover {
+  transform: scale(1.15);
 }
-main .links {
+header .nav ul {
   display: flex;
-  gap: 15px;
+  flex-direction: row;
+  gap: 20px;
 }
-main .links .git {
-  background-color: yellow;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
+header .nav ul li {
+  list-style: none;
   cursor: pointer;
-  transition: 0.4s;
+  font-size: 30px;
+  transition: 0.3s;
 }
-main .links .git:hover {
-  transform: scale(1.2);
-  background-color: purple;
-  color: white;
-}
-main .header {
-  width: 100%;
-  text-align: center;
-}
-main .projects {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-main .projects a {
-  background-color: purple;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-main .projects a:hover {
-  transform: scale(1.2);
-  background-color: yellow;
-  color: black;
+header .nav ul li:hover {
+  transform: scale(1.15);
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
