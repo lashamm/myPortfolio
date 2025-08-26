@@ -38,13 +38,15 @@ main{
             display: flex;
             flex-direction: column;
             gap:40px;
-            #adr{
+            #git{
                 display: flex;
                 flex-direction: column;
                 gap:10px;
             a{
                 text-decoration: none;
                 transition: 0.3s;
+                width:90px;
+                color:black;
                 &:hover{
                     color:red
                 }
@@ -90,6 +92,8 @@ main{
             a{
                 text-decoration: none;
                 transition: 0.3s;
+                color:black;
+                width:145px;
                 &:hover{
                     color:red
                 }
@@ -195,7 +199,7 @@ main{
             display: flex;
             flex-direction: column;
             gap:40px;
-            #adr{
+            #git{
                 display: flex;
                 flex-direction: column;
                 gap:10px;
