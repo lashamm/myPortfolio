@@ -54,19 +54,6 @@
 .footParent main .upper .left #adr a:hover {
   color: red;
 }
-.footParent main .upper .left #mail {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footParent main .upper .left #mail p {
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.footParent main .upper .left #mail p:hover {
-  color: red;
-}
 .footParent main .upper .left #num {
   display: flex;
   flex-direction: column;
@@ -84,6 +71,19 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.footParent main .upper .right #mail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footParent main .upper .right #mail p {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footParent main .upper .right #mail p:hover {
+  color: red;
 }
 .footParent main .upper .right #soc1 {
   display: flex;
@@ -205,19 +205,6 @@
   .upper .left #adr a:hover {
     color: red;
   }
-  .upper .left #mail {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .upper .left #mail p {
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .upper .left #mail p:hover {
-    color: red;
-  }
   .upper .left #num {
     display: flex;
     flex-direction: column;
@@ -235,6 +222,19 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+  .upper .right #mail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .upper .right #mail p {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .upper .right #mail p:hover {
+    color: red;
   }
   .upper .right #soc1 {
     display: flex;

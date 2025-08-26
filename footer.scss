@@ -50,19 +50,7 @@ main{
                 }
             }
         }
-            #mail{
-                display: flex;
-                flex-direction: column;
-                gap:10px;
-                p{
-                    text-decoration: none;
-                    cursor:pointer;
-                    transition: 0.3s;
-                    &:hover{
-                        color:red;
-                    }
-                }
-            }
+           
             #num{
                 display: flex;
                 flex-direction: column;
@@ -81,6 +69,20 @@ main{
             display: flex;
             flex-direction: column;
             gap:40px;
+            #mail{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                p{
+                    text-decoration: none;
+                    cursor:pointer;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        color:red;
+                    }
+                }
+            }
             #soc1{
                 display: flex;
                 flex-direction: column;
@@ -205,20 +207,7 @@ main{
                 }
             }
         }
-            #mail{
-                display: flex;
-                flex-direction: column;
-                gap:10px;
-                p{
-                    text-decoration: none;
-                    cursor:pointer;
-                    transition: 0.3s;
-                    
-                    &:hover{
-                        color:red;
-                    }
-                }
-            }
+            
             #num{
                 display: flex;
                 flex-direction: column;
@@ -237,6 +226,20 @@ main{
             display: flex;
             flex-direction: column;
             gap:40px;
+            #mail{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                p{
+                    text-decoration: none;
+                    cursor:pointer;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        color:red;
+                    }
+                }
+            }
             #soc1{
                 display: flex;
                 flex-direction: column;
