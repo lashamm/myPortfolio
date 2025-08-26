@@ -1,0 +1,44 @@
+header {
+  height: 130px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+header .pfp {
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  background-color: yellow;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .pfp:hover {
+  transform: scale(1.15);
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header nav ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.3s;
+}
+header nav ul li:hover {
+  transform: scale(1.15);
+  color: grey;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  color: grey;
+}/*# sourceMappingURL=header.css.map */
