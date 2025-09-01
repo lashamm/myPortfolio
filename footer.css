@@ -53,9 +53,6 @@
   width: 90px;
   color: black;
 }
-.footParent main .upper .left #git a:hover {
-  color: red;
-}
 .footParent main .upper .left #num {
   display: flex;
   flex-direction: column;
@@ -65,9 +62,6 @@
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
-}
-.footParent main .upper .left #num p:hover {
-  color: red;
 }
 .footParent main .upper .right {
   display: flex;
@@ -84,9 +78,6 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.footParent main .upper .right #mail p:hover {
-  color: red;
-}
 .footParent main .upper .right #soc1 {
   display: flex;
   flex-direction: column;
@@ -98,9 +89,6 @@
   color: black;
   width: 145px;
 }
-.footParent main .upper .right #soc1 a:hover {
-  color: red;
-}
 .footParent main .upper .right #soc2 {
   display: flex;
   flex-direction: column;
@@ -109,9 +97,6 @@
 .footParent main .upper .right #soc2 a {
   text-decoration: none;
   transition: 0.3s;
-}
-.footParent main .upper .right #soc2 a:hover {
-  color: red;
 }
 .footParent main .upper .right #work {
   display: flex;
@@ -122,9 +107,6 @@
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
-}
-.footParent main .upper .right #work p:hover {
-  color: red;
 }
 
 @media screen and (max-width: 1080px) {
@@ -151,9 +133,6 @@
     text-decoration: none;
     transition: 0.3s;
   }
-  .footParent .right #soc1 a:hover {
-    color: red;
-  }
   .footParent .right #soc2 {
     display: flex;
     flex-direction: column;
@@ -162,9 +141,6 @@
   .footParent .right #soc2 a {
     text-decoration: none;
     transition: 0.3s;
-  }
-  .footParent .right #soc2 a:hover {
-    color: red;
   }
   .footParent .right #work {
     display: flex;
@@ -175,9 +151,6 @@
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-  }
-  .footParent .right #work p:hover {
-    color: red;
   }
   main {
     width: 100% !important;
@@ -206,9 +179,6 @@
     text-decoration: none;
     transition: 0.3s;
   }
-  .upper .left #git a:hover {
-    color: red;
-  }
   .upper .left #num {
     display: flex;
     flex-direction: column;
@@ -218,9 +188,6 @@
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-  }
-  .upper .left #num p:hover {
-    color: red;
   }
   .upper .right {
     display: flex;
@@ -237,9 +204,6 @@
     cursor: pointer;
     transition: 0.3s;
   }
-  .upper .right #mail p:hover {
-    color: red;
-  }
   .upper .right #soc1 {
     display: flex;
     flex-direction: column;
@@ -248,9 +212,6 @@
   .upper .right #soc1 a {
     text-decoration: none;
     transition: 0.3s;
-  }
-  .upper .right #soc1 a:hover {
-    color: red;
   }
   .upper .right #soc2 {
     display: flex;
@@ -261,9 +222,6 @@
     text-decoration: none;
     transition: 0.3s;
   }
-  .upper .right #soc2 a:hover {
-    color: red;
-  }
   .upper .right #work {
     display: flex;
     flex-direction: column;
@@ -273,8 +231,5 @@
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-  }
-  .upper .right #work p:hover {
-    color: red;
   }
 }/*# sourceMappingURL=footer.css.map */

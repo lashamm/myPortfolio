@@ -37,7 +37,50 @@
         </div>
 
 
-    <main></main>
+
+
+
+
+   
+
+    <main>
+
+
+      <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <div class="slide"><a target="_blank" href="https://restoraunt-project-lasha.netlify.app/">Restoraunt Site (HTML + SCSS)</a></div>
+      <div class="slide"><a target="_blank" href="https://jscolorgamelasha.netlify.app/">Color Game(JS)</a></div>
+      <div class="slide"><a target="_blank" href="https://g-r-api-lasha-js.netlify.app/">Railway Site (HTML + SCSS + JS)</a></div>
+      <div class="slide"><a target="_blank" href="https://g-r-api-lasha.netlify.app/home ">Railway Site (Angular)</a></div>
+      <div class="slide"><a target="_blank" href="https://easy-calculator-llmm.netlify.app/">Easy Calculator (JS)</a></div>
+
+    </div>
+    <div class="controls">
+      <button id="prev">⬅ Prev</button>
+      <button id="next">Next ➡</button>
+    </div>
+  </div>
+
+<script>
+    const carousel = document.getElementById("carousel");
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    let index = 0;
+
+    function showSlide(i) {
+      if (i < 0) index = slides.length - 1;
+      else if (i >= slides.length) index = 0;
+      else index = i;
+
+      carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    prevBtn.addEventListener("click", () => showSlide(index - 1));
+    nextBtn.addEventListener("click", () => showSlide(index + 1));
+  </script>
+    </main>
 
 
     <footer class="footParent">

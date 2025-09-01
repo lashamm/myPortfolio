@@ -1,1 +1,69 @@
-/*# sourceMappingURL=projects.css.map */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.carousel-container {
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide a {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.slide a:hover {
+  background: #666;
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #666;
+}/*# sourceMappingURL=projects.css.map */
