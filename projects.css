@@ -3,7 +3,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
+  background: #FFFFFF;
   font-family: Arial, sans-serif;
   color: white;
 }
@@ -13,7 +13,7 @@ main {
   max-width: 600px;
   overflow: hidden;
   border-radius: 12px;
-  background: #222;
+  background: #14B8A6;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding: 20px;
   position: relative;
@@ -34,16 +34,17 @@ main {
 .slide a {
   display: inline-block;
   padding: 20px 40px;
-  background: #444;
-  color: white;
+  background: #3B82F6;
+  color: #2C2C2C;
   text-decoration: none;
   border-radius: 8px;
   font-size: 20px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .slide a:hover {
-  background: #666;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: scale(1.1);
 }
 
 /* Buttons */
@@ -55,15 +56,16 @@ main {
 
 button {
   padding: 10px 20px;
-  background: #444;
-  color: white;
+  background: #3B82F6;
+  color: #2C2C2C;
   border: none;
   cursor: pointer;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: 0.3s;
   font-size: 16px;
 }
 
 button:hover {
-  background: #666;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: scale(1.05);
 }/*# sourceMappingURL=projects.css.map */
