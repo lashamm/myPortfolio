@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
         <header>
@@ -36,12 +37,16 @@
             </a>
         </div>
 
-    <main>
-    <select class="Select">
-        <option class="Opts" value="Geo">ქართული</option>
-        <option class="Opts" value="Eng">English</option>
-        <option class="Opts" value="Rus">русский</option>
-    </select>
+  <main>
+
+    <div class="dropdown">
+      <div class="dropdown-btn">Select language</div>
+      <div class="dropdown-content">
+        <div data-value="Geo">ქართული</div>
+        <div data-value="Eng">English</div>
+        <div data-value="Rus">Русский</div>
+      </div>
+    </div>
 
     <div class="text"></div>
 
@@ -85,5 +90,9 @@
     </div>
 </main>
     </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
