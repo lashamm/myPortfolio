@@ -34,15 +34,14 @@ header nav ul li {
 }
 header nav ul li:hover {
   transform: scale(1.15);
-  color: grey;
+  background-color: #3B82F6;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 header nav ul li a {
   color: #2C2C2C;
   text-decoration: none;
   transition: 0.3s;
-}
-header nav ul li a:hover {
-  color: grey;
 }
 
 .mobile-Header {

@@ -1,0 +1,51 @@
+    $main : #FFFFFF;
+    $primary : #14B8A6;
+    $secondary : #3B82F6;
+    $text : #2C2C2C;
+
+main{
+    display: flex;
+    width: 100%;
+    gap:120px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    .Select{
+        padding: 15px;
+        border: none;
+        background-color: $secondary;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.text{
+    width: 50%;
+    text-align: center;
+    background-color: $secondary;
+    padding:23px;
+    border-radius: 10px;
+    p{
+        font-size: 20px;
+    }
+}
+}
+
+@media screen and (max-width:1200px) {
+    main{
+       height: auto; 
+    }
+    footer{
+        padding-bottom: 10x;
+    }
+}
+
+@media screen and (max-width:700px){
+    .text{
+        width: 75% !important;
+        p{
+            
+        }
+    }
+}

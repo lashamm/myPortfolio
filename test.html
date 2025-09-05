@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Dropdown</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    .dropdown {
+      position: relative;
+      width: 200px;
+      user-select: none;
+    }
+
+    /* Button */
+    .dropdown-btn {
+      padding: 10px 15px;
+      background: #3498db;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .dropdown-btn:after {
+      content: "▼";
+      font-size: 0.8rem;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown.open .dropdown-btn:after {
+      transform: rotate(-180deg);
+    }
+
+    /* Menu */
+    .dropdown-content {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown.open .dropdown-content {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .dropdown-content div {
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .dropdown-content div:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <div class="dropdown-btn">Select language</div>
+    <div class="dropdown-content">
+      <div data-value="Geo">Georgian</div>
+      <div data-value="Eng">English</div>
+      <div data-value="Rus">Russian</div>
+    </div>
+  </div>
+
+  <div class="result" style="margin-top:20px; font-size:18px;"></div>
+
+  <script>
+    const dropdown = document.querySelector(".dropdown");
+    const btn = dropdown.querySelector(".dropdown-btn");
+    const menu = dropdown.querySelector(".dropdown-content");
+    const result = document.querySelector(".result");
+
+    // Toggle dropdown
+    btn.addEventListener("click", () => {
+      dropdown.classList.toggle("open");
+    });
+
+    // Handle selection
+    menu.querySelectorAll("div").forEach(option => {
+      option.addEventListener("click", () => {
+        btn.textContent = option.textContent; // set button text
+        result.textContent = "You selected: " + option.textContent;
+        dropdown.classList.remove("open");
+      });
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", e => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("open");
+      }
+    });
+  </script>
+</body>
+</html>
