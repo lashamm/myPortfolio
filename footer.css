@@ -16,7 +16,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.footParent main {
+.footParent .FootMain {
   width: 60%;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -27,83 +27,83 @@
   align-items: center;
   background-color: grey;
 }
-.footParent main #h1 {
+.footParent .FootMain #h1 {
   width: 100%;
   margin-left: 300px;
 }
-.footParent main .upper {
+.footParent .FootMain .upper {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.footParent main .upper .left {
+.footParent .FootMain .upper .left {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.footParent main .upper .left #git {
+.footParent .FootMain .upper .left #git {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .left #git a {
+.footParent .FootMain .upper .left #git a {
   text-decoration: none;
   transition: 0.3s;
   width: 90px;
   color: black;
 }
-.footParent main .upper .left #num {
+.footParent .FootMain .upper .left #num {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .left #num p {
+.footParent .FootMain .upper .left #num p {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.footParent main .upper .right {
+.footParent .FootMain .upper .right {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.footParent main .upper .right #mail {
+.footParent .FootMain .upper .right #mail {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .right #mail p {
+.footParent .FootMain .upper .right #mail p {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.footParent main .upper .right #soc1 {
+.footParent .FootMain .upper .right #soc1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .right #soc1 a {
+.footParent .FootMain .upper .right #soc1 a {
   text-decoration: none;
   transition: 0.3s;
   color: black;
   width: 145px;
 }
-.footParent main .upper .right #soc2 {
+.footParent .FootMain .upper .right #soc2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .right #soc2 a {
+.footParent .FootMain .upper .right #soc2 a {
   text-decoration: none;
   transition: 0.3s;
 }
-.footParent main .upper .right #work {
+.footParent .FootMain .upper .right #work {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footParent main .upper .right #work p {
+.footParent .FootMain .upper .right #work p {
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;

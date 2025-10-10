@@ -9,14 +9,14 @@ body {
   background-color: var(--main);
   color: var(--text);
 }
-
-main {
+.intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   height: 50vh;
+  width: 100%;
 }
 
 /* Dropdown */
