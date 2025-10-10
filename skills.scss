@@ -1,0 +1,47 @@
+.skills{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap:15px;
+padding-top: 30px;
+padding-bottom: 30px;
+.skillDiv{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    border-radius: 15px;
+    padding:50px;
+    backdrop-filter: blur(60px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    i{
+        font-size: 60px;
+        cursor: pointer;
+        transition: 0.3s;
+        borer-radius:15px;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+    #HTML_I{
+            color:#DD4B25;
+        }
+    #CSS_I{
+        color:#3595CF;
+    }
+    #SCSS_I{
+        color:#9E5680;
+    }
+    #JS_I{
+        color:#E8D44D;
+    }
+    #TYPE_I{
+        color:#2F74C0;
+    }
+    #ANGULAR_I{
+        color:#BE002E;
+    }
+    
+}
+}
