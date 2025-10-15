@@ -5,14 +5,12 @@
 
  
 
-    .main{
+    .projects{
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      background: $main;
-      font-family: Arial, sans-serif;
-      color: white;
+      gap:20px;
+      flex-direction: column;
     }
 
     .carousel-container {
