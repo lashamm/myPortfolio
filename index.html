@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/projects.css">
     <link rel="stylesheet" href="/skills.css">
+    <link rel="stylesheet" href="/archivement.css">
+    <link rel="stylesheet" href="/education.css">
 </head>
 <body>
 
@@ -47,6 +49,8 @@
 
     <main>
         
+    <!-- about me intro -->
+
         <div class="intro">
             <div class="dropdown">
       <div class="dropdown-btn">Select language</div>
@@ -62,11 +66,7 @@
         <script src="/AboutLang.js"></script>
         </div>
 
-
-
-
-
-
+        <!-- projects -->
 
         <div class="projects">
             <h1>Projects</h1>
@@ -106,12 +106,7 @@
   </script>
         </div>
 
-
-
-
-
-
-
+        <!-- skills -->
 
         <div class="skills">
             <h1>Skills</h1>
@@ -125,12 +120,118 @@
             </div>
         </div>
 
+        <!-- archievement -->
+         
+        <div class="archievement">
+            <a href="/certimgs/certificate.pdf" download>
+                <i class="fa-solid fa-download"></i>
+                <img src="/certimgs/certificate img.png" alt="certificate">
+            </a>
+        </div>
 
+        <!-- education -->
 
+<div class="education">
+    <div class="language-selector">
+        <div class="custom-select">
+            <div class="select-button" id="selectButton">
+                <span id="selectedOption">
+                    <span class="flag">🇬🇪</span>
+                    <span>ქართული</span>
+                </span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="options-list" id="optionsList">
+                <div class="option selected" data-lang="ka">
+                    <span class="flag">🇬🇪</span>
+                    <span>ქართული</span>
+                </div>
+                <div class="option" data-lang="en">
+                    <span class="flag">🇬🇧</span>
+                    <span>English</span>
+                </div>
+                <div class="option" data-lang="ru">
+                    <span class="flag">🇷🇺</span>
+                    <span>Русский</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="educDiv">
+        <p id="educationText">ამჟამად ვსწავლობ როგორც სკოლაში, ასევე STEP IT აკადემიაში, სადაც ვსწავლობ full-stack ვებ-დეველოპმენტს. front-end კურსი უკვე დავამთავრე და ამჟამად ვსწავლობ back-end დეველოპმენტს.</p>
+    </div>
+</div>
 
+<!-- JavaScript -->
+<script>
+    const translations = {
+        ka: {
+            text: "ამჟამად ვსწავლობ როგორც სკოლაში, ასევე STEP IT აკადემიაში, სადაც ვსწავლობ full-stack ვებ-დეველოპმენტს. front-end კურსი უკვე დავამთავრე და ამჟამად ვსწავლობ back-end დეველოპმენტს.",
+            flag: "🇬🇪",
+            name: "ქართული"
+        },
+        en: {
+            text: "I am currently studying both at school and at STEP IT Academy, where I am learning full-stack web development. I have already completed the front-end course and am currently studying back-end development.",
+            flag: "🇬🇧",
+            name: "English"
+        },
+        ru: {
+            text: "В настоящее время я учусь как в школе, так и в академии STEP IT, где изучаю full-stack веб-разработку. Я уже закончил курс front-end и сейчас изучаю back-end разработку.",
+            flag: "🇷🇺",
+            name: "Русский"
+        }
+    };
 
-        .
+    const selectButton = document.getElementById('selectButton');
+    const optionsList = document.getElementById('optionsList');
+    const selectedOption = document.getElementById('selectedOption');
+    const arrow = selectButton.querySelector('.arrow');
+    const educationText = document.getElementById('educationText');
+    const options = document.querySelectorAll('.option');
+
+    educationText.style.transition = 'opacity 0.3s ease';
+
+    selectButton.addEventListener('click', () => {
+        optionsList.classList.toggle('open');
+        selectButton.classList.toggle('active');
+        arrow.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!selectButton.contains(e.target) && !optionsList.contains(e.target)) {
+            optionsList.classList.remove('open');
+            selectButton.classList.remove('active');
+            arrow.classList.remove('open');
+        }
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            const lang = option.dataset.lang;
+            const langData = translations[lang];
+
+            options.forEach(opt => opt.classList.remove('selected'));
+            option.classList.add('selected');
+
+            selectedOption.innerHTML = `
+                <span class="flag">${langData.flag}</span>
+                <span>${langData.name}</span>
+            `;
+
+            educationText.style.opacity = '0';
+            
+            setTimeout(() => {
+                educationText.textContent = langData.text;
+                educationText.style.opacity = '1';
+            }, 200);
+
+            optionsList.classList.remove('open');
+            selectButton.classList.remove('active');
+            arrow.classList.remove('open');
+        });
+    });
+</script>
 
     </main>
 

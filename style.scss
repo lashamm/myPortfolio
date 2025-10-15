@@ -22,4 +22,7 @@ body{
 main{
     height: auto;
     width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap:100px;
 }

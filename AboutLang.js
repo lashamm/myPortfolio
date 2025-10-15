@@ -3,7 +3,6 @@ const btn = dropdown.querySelector(".dropdown-btn");
 const menu = dropdown.querySelector(".dropdown-content");
 const textBox = document.querySelector(".text");
 
-// Language texts
 const texts = {
   Geo: `<p>გამარჯობა, მე ვარ 16 წლის ფრონტ-ენდ დეველოპერი, ამჟამად ვსწავლობ როგორც სკოლაში, ასევე STEP IT აკადემიაში, 
   სადაც ვსწავლობ full-stack ვებ-დეველოპმენტს.
@@ -23,12 +22,10 @@ const texts = {
   У меня пока нет профессионального опыта, но я полон энтузиазма, готов учиться и прикладывать максимум усилий.</p>`
 };
 
-// Toggle dropdown
 btn.addEventListener("click", () => {
   dropdown.classList.toggle("open");
 });
 
-// Handle selection
 menu.querySelectorAll("div").forEach(option => {
   option.addEventListener("click", () => {
     const value = option.dataset.value;
@@ -38,23 +35,19 @@ menu.querySelectorAll("div").forEach(option => {
   });
 });
 
-// Close when clicking outside
 document.addEventListener("click", e => {
   if (!dropdown.contains(e.target)) {
     dropdown.classList.remove("open");
   }
 });
 
-// Update text with animation
 function updateText(value) {
   textBox.innerHTML = texts[value] || "";
 
-  // 🔥 Re-trigger bounce animation
   textBox.classList.remove("show");
-  void textBox.offsetWidth; // force reflow
+  void textBox.offsetWidth;
   textBox.classList.add("show");
 }
 
-// Load default
 updateText("Geo");
 btn.textContent = "ქართული";
